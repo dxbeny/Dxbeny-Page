@@ -3,37 +3,66 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Benyamin Jamshidi</title>
-<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+<title>Benyamin Jamshidi - Hell Letter</title>
+<link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
 <style>
+  /* پس‌زمینه جهنمی */
   body {
     margin: 0;
-    font-family: 'Vazirmatn', sans-serif;
-    background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+    font-family: 'Pirata One', cursive;
+    background: radial-gradient(circle at bottom, #ff2e00, #000 80%);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    color: #fff;
   }
-  .profile-card {
-    background: white;
+
+  /* کارت نامه سوخته */
+  .burnt-card {
+    background: linear-gradient(135deg, #552200 0%, #aa3300 100%);
+    border-radius: 15px;
     padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-    text-align: center;
     max-width: 400px;
     width: 90%;
+    box-shadow: 0 0 25px rgba(255,100,0,0.7);
+    border: 2px solid #ff7700;
+    position: relative;
   }
-  .profile-card h1 {
-    margin: 0;
-    font-size: 28px;
-    color: #333;
+
+  /* گوشه‌های سوخته */
+  .burnt-card::before, .burnt-card::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-radius: 15px;
+    box-shadow: inset 0 0 60px rgba(0,0,0,0.7);
   }
-  .profile-card p {
-    margin: 8px 0;
-    color: #555;
+
+  .burnt-card h1 {
+    margin: 0 0 10px 0;
+    font-size: 26px;
+    text-align: center;
+    color: #ffe4b5;
+    text-shadow: 1px 1px 5px #000;
+  }
+
+  .burnt-card p {
+    margin: 5px 0;
     font-size: 16px;
+    color: #ffddb3;
+    text-shadow: 1px 1px 2px #000;
   }
+
+  /* لینک های تماس */
+  .burnt-card a {
+    color: #ffcc88;
+    text-decoration: none;
+  }
+
+  /* شبکه‌ها */
   .social-links {
     margin-top: 20px;
     display: flex;
@@ -46,35 +75,37 @@
     align-items: center;
     width: 50px;
     height: 50px;
+    background: #330000;
     border-radius: 50%;
-    background: #fff;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 15px rgba(255,140,0,0.8);
     transition: 0.3s;
   }
   .social-links a:hover {
     transform: scale(1.2);
+    box-shadow: 0 0 25px rgba(255,200,0,1);
   }
   .social-links img {
     width: 28px;
     height: 28px;
+    object-fit: contain;
   }
 </style>
 </head>
 <body>
-  <div class="profile-card">
+  <div class="burnt-card">
     <h1>Benyamin Jamshidi</h1>
     <p>Age: 24</p>
     <p>City: Mashhad</p>
-    <p>Phone: <a href="tel:09159034277" style="color:#1a73e8;">09159034277</a></p>
+    <p>Phone: <a href="tel:09159034277">09159034277</a></p>
     <div class="social-links">
       <a href="https://t.me/dxbeny" target="_blank" title="Telegram">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram Logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
       </a>
       <a href="https://instagram.com/dxbeny" target="_blank" title="Instagram">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram Logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram">
       </a>
       <a href="https://x.com/dxbeny" target="_blank" title="X / Twitter">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/X_logo_2023.svg" alt="X Logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/X_Logo_Blue.svg" alt="X">
       </a>
     </div>
   </div>
