@@ -1,62 +1,82 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Benyamin Jamshidi</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #6a11cb, #2575fc);
-      color: white;
-      text-align: center;
-      padding: 50px 20px;
-    }
-    .card {
-      background-color: rgba(0,0,0,0.4);
-      padding: 30px;
-      border-radius: 15px;
-      max-width: 400px;
-      margin: auto;
-    }
-    h1 {
-      margin-bottom: 10px;
-      font-size: 2em;
-    }
-    p {
-      margin: 5px 0;
-      font-size: 1.1em;
-    }
-    a {
-      display: block;
-      margin: 10px 0;
-      color: #ffdd57;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    a:hover {
-      color: #fff;
-    }
-    img {
-      border-radius: 50%;
-      width: 120px;
-      height: 120px;
-      margin-bottom: 15px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Benyamin Jamshidi</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    font-family: 'Vazirmatn', sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .profile-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+  }
+  .profile-card h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+  }
+  .profile-card p {
+    margin: 8px 0;
+    color: #555;
+    font-size: 16px;
+  }
+  .social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  .social-links a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+  }
+  .social-links a:hover {
+    transform: scale(1.2);
+  }
+  .social-links img {
+    width: 28px;
+    height: 28px;
+  }
+</style>
 </head>
 <body>
-  <div class="card">
-    <img src="https://via.placeholder.com/120" alt="Benyamin Jamshidi">
+  <div class="profile-card">
     <h1>Benyamin Jamshidi</h1>
     <p>Age: 24</p>
     <p>City: Mashhad</p>
-    <p>Phone: 09159034277</p>
-
-    <a href="mailto:beny@dxbeny.bar">Email Me</a>
-    <a href="https://t.me/dxbeny" target="_blank">Telegram</a>
-    <a href="https://instagram.com/dxbeny" target="_blank">Instagram</a>
-    <a href="https://twitter.com/dxbeny" target="_blank">X (Twitter)</a>
+    <p>Phone: <a href="tel:09159034277" style="color:#1a73e8;">09159034277</a></p>
+    <div class="social-links">
+      <a href="https://t.me/dxbeny" target="_blank" title="Telegram">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram Logo">
+      </a>
+      <a href="https://instagram.com/dxbeny" target="_blank" title="Instagram">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram Logo">
+      </a>
+      <a href="https://x.com/dxbeny" target="_blank" title="X / Twitter">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/X_logo_2023.svg" alt="X Logo">
+      </a>
+    </div>
   </div>
 </body>
 </html>
